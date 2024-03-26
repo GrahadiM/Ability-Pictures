@@ -15,7 +15,7 @@ function Hero() {
       autoplay
     >
       <Image
-        src="/images/home/hero1.jpg"
+        src="/images/banner/1.png"
         alt="image 1"
         width={1920}
         height={1080}
@@ -24,7 +24,7 @@ function Hero() {
         priority
       />
       <Image
-        src="/images/home/hero2.jpg"
+        src="/images/banner/2.png"
         alt="image 2"
         width={1920}
         height={1080}
@@ -33,7 +33,7 @@ function Hero() {
         priority
       />
       <Image
-        src="/images/home/hero3.jpg"
+        src="/images/banner/3.png"
         alt="image 3"
         width={1920}
         height={1080}
