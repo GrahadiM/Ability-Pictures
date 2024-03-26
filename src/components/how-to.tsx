@@ -64,7 +64,7 @@ function HowTo() {
             placeholder="title"
             className="text-gray-900 text-3xl md:text-4xl lg:text-5xl font-bold"
           >
-            Our Simple Procces
+            Proses Pengerjaan
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {howto.map((val, index) => (

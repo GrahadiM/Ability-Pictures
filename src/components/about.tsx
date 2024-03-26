@@ -10,7 +10,7 @@ function AboutComponent({ withButton: withButton = true }) {
       <div className="max-w-7xl w-full mx-auto pt-16 px-6 py-16">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
           <div className="col-span-1">
-            <div className="flex flex-col md:text-left text-center gap-8">
+            <div className="flex flex-col md:text-left text-center md:items-start items-center gap-8">
               <Typography
                 placeholder="title-about"
                 variant="h1"
@@ -48,7 +48,7 @@ function AboutComponent({ withButton: withButton = true }) {
                 Ability Pictures merupakan Production House yang bergerak dibidang Visual Kreatif. Digital Commercial menjadi fokus utama kami dengan didukung equipment dan tim yang professional.
               </Typography>
               {withButton && (
-                <div className="flex mt-2">
+                <div className="flex mt-2 mb-2">
                   <Button
                     variant="outlined"
                     placeholder="more-button"

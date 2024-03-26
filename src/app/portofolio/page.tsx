@@ -1,6 +1,7 @@
 "use client";
 import PortofolioComponent from "@/components/portofolio";
 import LogoMarquee from "@/components/logo-marquee";
+import ListClient from "@/components/client";
 import PortofolioHero from "@/components/portofolio/hero";
 import { Button } from "@material-tailwind/react";
 import React from "react";
@@ -9,6 +10,7 @@ function PortfolioPage() {
   return (
     <section className="flex flex-col min-h-screen ">
       <PortofolioHero />
+      <ListClient />
       <PortofolioComponent />
       {/* <div className="py-12 max-w-7xl px-6 mx-auto w-full flex flex-col gap-12 items-center justify-center">
         <Button
