@@ -55,7 +55,7 @@ function ImageCol({ src, alt, colSpan }: { src: string, alt: string, colSpan: st
                 <img
                     src={src}
                     alt={alt}
-                    className="w-full object-cover rounded-r-3xl rounded-t-3xl cursor-pointer hover:opacity-75 hover:scale-150 transition-all duration-300"
+                    className="w-full object-cover rounded-r-3xl rounded-l-3xl cursor-pointer hover:opacity-75 hover:scale-150 transition-all duration-300"
                     onClick={() => openPopup(src, priceList.indexOf(src))}
                     onKeyDown={goLeft}
                     onKeyUp={goRight}
@@ -92,15 +92,17 @@ function ImageCol({ src, alt, colSpan }: { src: string, alt: string, colSpan: st
 }
 function PriceListImage() {
     return (
-        <section className="bg-[#000] py-16">
-            <div className="max-w-6xl px-8 py-8 mx-auto w-full grid grid-cols-1 md:grid-cols-3 rounded-3xl gap-4 items-center">
+        <section className="bg-black py-16">
+            <div className="max-w px-8 py-8 mx-auto w-full grid grid-cols-1 md:grid-cols-5">
                 {priceList.map((val, index) => (
-                    <ImageCol
-                        key={index}
-                        src={val}
-                        alt={'thumbnail'}
-                        colSpan={'md:col-span-1'}
-                    />
+                    <>
+                        <ImageCol
+                            key={index}
+                            src={val}
+                            alt={'thumbnail'}
+                            colSpan={`md:col-span-1 ${index === 1 ? 'md:col-start-3' : ''} ${index === 2 ? 'md:col-start-5' : ''} ${index === 3 ? 'md:col-start-2' : ''} ${index === 4 ? 'md:col-start-4' : ''}`}
+                        />
+                    </>
                 ))}
             </div>
         </section>
